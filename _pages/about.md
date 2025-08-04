@@ -1,6 +1,6 @@
 ---
 title: "Hi all! I'm Yeeun👋🏻"
-permalink: /
+permalink: /about/
 layout: single
 comments: false
 ---
