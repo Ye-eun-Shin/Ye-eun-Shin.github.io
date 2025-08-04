@@ -12,8 +12,8 @@ permalink: /nlp/post-name-here-3/
 toc: true
 toc_sticky: true
 
-date: 2022-07-24
-last_modified_at: 2022-07-24
+date: 2025-08-05
+last_modified_at: 2025-08-05
 ---
 
 ## 🦥 본문
