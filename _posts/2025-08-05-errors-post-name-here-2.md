@@ -1,6 +1,6 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+title: "Errors always exist.."
+excerpt: "wherever whenever however.."
 
 categories:
   - Error notes
@@ -12,8 +12,8 @@ permalink: /errors/post-name-here-2/
 toc: true
 toc_sticky: true
 
-date: 2025-08-05
-last_modified_at: 2025-08-05
+date: 2024-08-05
+last_modified_at: 2024-08-05
 ---
 
 ## 🦥 본문
