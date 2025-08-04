@@ -1,13 +1,13 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
+title: "Music is my life"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
-  - Categories1
+  - music
 tags:
   - [tag1, tag2]
 
-permalink: /categories1/post-name-here/
+permalink: /music/post-name-here/
 
 toc: true
 toc_sticky: true
