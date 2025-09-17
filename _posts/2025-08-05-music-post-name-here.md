@@ -3,7 +3,7 @@ title: "Music is my life"
 excerpt: "Who is The Best Band?"
 
 categories:
-  - Music
+  - Music & Audio
 tags:
   - [tag1, tag2]
 
