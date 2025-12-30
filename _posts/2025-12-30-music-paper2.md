@@ -158,11 +158,11 @@ This evaluation was conducted using the **Codec-SUPERB benchmark (Wu et al. 2024
 The paper claims **causality** due to the use of a **local Transformer**, and I empirically verify this claim 🤓.
 
 - Reference  
-    👾train code: https://github.com/zhai-lw/L3AC/blob/train/src/model/exp/train.py
+    👾train code: [https://github.com/zhai-lw/L3AC/blob/train/src/model/exp/train.py](https://github.com/zhai-lw/L3AC/blob/train/src/model/exp/train.py)
         
     - Model architecture `EnCodec`
         
-        https://github.com/zhai-lw/L3AC/blob/main/l3ac/en_codec.py#L22
+        [https://github.com/zhai-lw/L3AC/blob/main/l3ac/en_codec.py#L22](https://github.com/zhai-lw/L3AC/blob/main/l3ac/en_codec.py#L22)
 
 - **Model Info (3kbps)**
     | feature | num |
