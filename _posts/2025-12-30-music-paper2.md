@@ -164,7 +164,8 @@ The paper claims **causality** due to the use of a **local Transformer**, and I 
         
         [https://github.com/zhai-lw/L3AC/blob/main/l3ac/en_codec.py#L22](https://github.com/zhai-lw/L3AC/blob/main/l3ac/en_codec.py#L22)
 
-- **Model Info (3kbps)**
+
+- **Model Info (3kbps)**  
     | feature | num |
     | --- | --- |
     | **bitrate** | **3kbps** |
