@@ -53,8 +53,8 @@ Basically, MoCo (Queue-based contrastive learning) is used in here. However, the
 In MoCo, **Momentum Encoder** is used. Here's how it works:  
 - In Case ) **Audio -> Text** (text matching with an audio in a text set)
     - Audio Encoder updates a momentum of query (text) encoder
-    - What a momentum is... that Audio query $ θ_q $ is updating the text weights $ θ_k $ with $ θ_q $ updated by back propagation.
-      - $ θ_k←m⋅θ_k+(1−m)⋅θ_q $
+    - What a momentum is... that Audio query $ \theta_q $ is updating the text weights $ \theta_k $ with $ \theta_q $ updated by back propagation.
+      - $ \theta_k←m⋅\theta_k+(1−m)⋅\theta_q $
 
 #### 2. Objective Function of Contrastive Learning
 Using two types of loss function
