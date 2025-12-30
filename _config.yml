@@ -271,4 +271,4 @@ defaults:
       related: true
       sidebar:
         nav: "categories"
-
+      mathjax: true

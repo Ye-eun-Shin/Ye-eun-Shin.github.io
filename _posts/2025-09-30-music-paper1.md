@@ -14,6 +14,7 @@ toc_sticky: true
 
 date: 2025-09-03
 last_modified_at: 2025-09-03
+mathjax: true
 ---
 
 ## Understanding Audio-Text Retrieval Through Singular Value Decomposition
@@ -52,13 +53,13 @@ Basically, MoCo (Queue-based contrastive learning) is used in here. However, the
 In MoCo, **Momentum Encoder** is used. Here's how it works:  
 - In Case ) **Audio -> Text** (text matching with an audio in a text set)
     - Audio Encoder updates a momentum of query (text) encoder
-    - What a momentum is... that Audio query $θ_q$ is updating the text weights $θ_k$ with $θ_q$ updated by back propagation.
-      - $θ_k←m⋅θ_k+(1−m)⋅θ_q$
+    - What a momentum is... that Audio query $ θ_q $ is updating the text weights $ θ_k $ with $ θ_q $ updated by back propagation.
+      - $ θ_k←m⋅θ_k+(1−m)⋅θ_q $
 
 #### 2. Objective Function of Contrastive Learning
 Using two types of loss function
 1) ATC(Audio-Text Contrastive) loss
-    - $SNSIM(X, Y^+)$ (an often used loss function in contrastive learning)
+    - $ SNSIM(X, Y^+) $ (an often used loss function in contrastive learning)
     ![alt text](/assets/images/music1-1.png)
     -  Then, the loss function is wrapped once more, similar to a momentum update. This is called the <i>soft ouput</i>.
 
@@ -68,11 +69,12 @@ Using two types of loss function
     - This loss evaluates how well audio and text are aligned, typically implemented via **Cross-attention**.
 
 #### 3. LAtent Space Embedding Rank Analysis
-> To evaluate the impact of negative samples in contrastive learning
+> To evaluate the impact of negative samples in contrastive learning 
+
 - Applying SVD to queue embedding
-  - $E^m_{que} = [e^m_1, e^m_2, … , e^m_Q] \in R^{d*Q}$, where $e^m_i$ denotes the **CLS momentum embedding**
+  - $ E^m_{que} = [e^m_1, e^m_2, … , e^m_Q] \in R^{d*Q} $, where $ e^m_i $ denotes the **CLS momentum embedding**
   - ✅ What is **CLS embedding**?  
-  : You might be familiar with the **[CLS]** token..! It is the **summarized** representation of input data such as sentences, audio or multimodal data.  
+  You might be familiar with the **[CLS]** token..! It is the **summarized** representation of input data such as sentences, audio or multimodal data.  
   Thus, a CLS momentum embedding is the [CLS] token embedding of input sequences used in the momentum encoder.
 
 - The rank of the queue equals to the number of normalized singular values, which is **d**!
@@ -84,7 +86,7 @@ In these experiments, two datasets were used: 1) AudioCaps 2) Clotho.
 - However, Clotho contains multiple captions for a single WAV audio file. => **One-to-many mapping**??🤔
 - Interestingly, AudioCaps includes video samples. Plus, each video sample has information for audio classification, video captioning, and audio captioning.  
 
-When training the model, the standard of selecting the best checkpoint is “$R^{sum}$”, which sums the scores of text-to-audio (t2a) and audio-to-text (a2t) retrieval.
+When training the model, the standard of selecting the best checkpoint is “$ R^{sum} $”, which sums the scores of text-to-audio (t2a) and audio-to-text (a2t) retrieval.
 
 ### 🤓The part to study
 - Momentum Contrast (MoCo)
